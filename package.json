@@ -1,0 +1,31 @@
+{
+  "name": "@sygn/has-unicode",
+  "version": "0.1.0",
+  "description": "one line check whether a string contains unicode characters",
+  "main": "has-unicode.min.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "coffee -c --transpile has-unicode.coffee && npm run uglify",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uglify": "terser has-unicode.js -c -m -o has-unicode.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phazelift/has-unicode.git"
+  },
+  "keywords": [
+    "unicode"
+  ],
+  "author": "dennis raymondo van der sluis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phazelift/has-unicode/issues"
+  },
+  "homepage": "https://github.com/phazelift/has-unicode#readme",
+  "dependencies": {
+    "message-events": "^0.4.0",
+    "types.js": "^1.9.4"
+  }
+}

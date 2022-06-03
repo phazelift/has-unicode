@@ -12,7 +12,7 @@ message.format 'error', (text) ->
 
 
 hasUnicode = (string) ->
-	if notString(string) then message.error 'has-unicode requires a string type argument'
+	if notString(string) then message.error 'requires a string type argument'
 	else for ch, pos in string
 		return true if string.charCodeAt(pos) > 127
 	return false

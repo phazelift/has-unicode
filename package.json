@@ -1,6 +1,6 @@
 {
   "name": "@sygn/has-unicode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "one line check whether a string contains unicode characters",
   "main": "has-unicode.min.js",
   "publishConfig": {

@@ -18,7 +18,7 @@
     var ch, i, len, pos;
 
     if (notString(string)) {
-      message.error('invalid argument type');
+      message.error('requires a string type argument');
     } else {
       for (pos = i = 0, len = string.length; i < len; pos = ++i) {
         ch = string[pos];
